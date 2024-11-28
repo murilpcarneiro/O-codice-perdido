@@ -1,0 +1,27 @@
+.symbol-table {
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+.card {
+  background-color: #222;
+  color: white;
+}
+
+.btn-submit {
+  margin-top: 15px;
+}
+
+.message {
+  display: none;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.message.success {
+  color: #28a745;
+}
+
+.message.error {
+  color: #dc3545;
+}

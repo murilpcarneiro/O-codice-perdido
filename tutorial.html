@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css
+  ">
+  <link rel="stylesheet" href="font-family.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js
+  "></script>
+  <title>Tutorial</title>
+</head>
+
+<body class="bg-dark text-white d-flex align-items-center flex-column">
+  <h1 class="mt-5">Como jogar</h1>
+  <p class="ms-5 me-5">
+    O jogo é baseado em criptografia e desafios de lógica. Você deve decifrar mensagens secretas e resolver enigmas para
+    avançar na história.<br>
+    <br>
+    Cada desafio é uma oportunidade de aprender sobre diferentes métodos de criptografia e testar suas habilidades.<br>
+    <br>
+    Se precisar de ajuda, clique no botão "Dica" para receber uma pista. Se estiver preso, clique em "Solução" para
+    revelar a resposta.<br>
+    <br>
+    Boa sorte e divirta-se!<br>
+  </p>
+  <p class="m-5">
+    1. Cifra de César <br>
+    O que é:<br>
+    A Cifra de César é uma das formas mais antigas de criptografia. Ela foi usada por Júlio César para enviar
+    mensagens<br>
+    seguras. É uma cifra de substituição simples que desloca as letras do alfabeto por um número fixo.<br>
+    <br>
+    Como funciona:<br>
+    Cada letra na mensagem original é substituída por outra, deslocada um número fixo de posições no alfabeto.<br>
+    Exemplo com deslocamento de 3:<br>
+    Mensagem original: "ABC"<br>
+    Mensagem cifrada: "DEF"<br>
+    Se passar do final do alfabeto, volta para o início (exemplo: "XYZ" vira "ABC").<br>
+    Fórmula matemática:<br>
+    Para cada letra, a posição cifrada é calculada como:<br>
+    C=(P+N)mod26<br>
+    C: Letra cifrada.<br>
+    P: Letra original (posição no alfabeto, começando de 0 para "A").<br>
+    N: Número do deslocamento.<br>
+    26: Total de letras no alfabeto.<br>
+    <br>
+    <br>
+    2. Código Binário<br>
+    O que é:<br>
+    O Código Binário é o sistema de numeração usado por computadores. Ele representa dados usando apenas os dígitos 0
+    e<br>
+    1, conhecidos como bits.<br>
+
+    Como funciona:<br>
+    No contexto de mensagens, cada letra ou símbolo é representado pelo seu valor na tabela ASCII (American Standard<br>
+    Code for Information Interchange) e convertido em binário.<br>
+    Exemplo:<br>
+    A letra "H" tem o valor ASCII 72. Em binário, é representada como 01001000.<br>
+    A palavra "HOPE" seria escrita como:<br>
+    makefile<br>
+    Copiar código<br>
+    H = 01001000<br>
+    O = 01001111<br>
+    P = 01010000<br>
+    E = 01000101<br>
+    <br>
+    Como decifrar:<br>
+    Divida os números em blocos de 8 bits.<br>
+    Converta cada bloco de binário para decimal.<br>
+    Encontre o caractere correspondente na tabela ASCII.<br>
+    <br>
+    <br>
+    3. Cifra de Substituição<br>
+    O que é:<br>
+    A Cifra de Substituição substitui cada letra do alfabeto por outro símbolo, número ou letra. É uma das formas
+    mais<br>
+    simples de criptografia.<br>
+
+    Como funciona:<br>
+    Um alfabeto "codificado" é criado, associando cada letra original a outra letra, símbolo ou número.<br>
+    Exemplo:<br>
+    Alfabeto normal: A B C D E F G H I ...<br>
+    Alfabeto cifrado: Q W E R T Y U I O ...<br>
+    Mensagem original: "HELLO"<br>
+    Mensagem cifrada: "ITSSG"<br>
+    <br>
+    Como decifrar:<br>
+    Use a tabela de equivalência fornecida (ou que você criou) para substituir os símbolos ou caracteres pela letra<br>
+    original.<br>
+    Caso a tabela não esteja disponível, tente usar análise de frequência (as letras mais comuns como "E", "A" e "O"<br>
+    podem ser pistas).<br>
+    <br>
+    <br>
+    4. Criptografia RSA<br>
+    O que é:<br>
+    O RSA é uma criptografia assimétrica moderna usada para proteger dados. Ele utiliza duas chaves:<br>
+    <br>
+    Chave pública: Usada para criptografar a mensagem.<br>
+    Chave privada: Usada para decifrar a mensagem.<br>
+    RSA é amplamente usado na segurança digital, como em conexões HTTPS.<br>
+    <br>
+    Como funciona:<br>
+    Escolhem-se dois números primos grandes, p e q.<br>
+    Calcula-se n = p × q (o módulo).<br>
+    Define-se um número e (exponencial público) que seja coprimo de<br>
+    (p−1)(q−1).<br>
+    A chave privada d é calculada como o inverso modular de e em relação a<br>
+    (p−1)(q−1).<br>
+    Fórmula de Criptografia:<br>
+    Para cifrar uma mensagem<br>
+    M, usamos a fórmula:<br>
+    <br>
+    C=Mᵉ mod 𝑛<br>
+    <br>
+    C: Mensagem criptografada.<br>
+    M: Mensagem original (convertida para número).<br>
+    Fórmula de Decifração:<br>
+    Para decifrar, usamos a fórmula:<br>
+    <br>
+    𝑀=𝐶ᵈ mod 𝑛<br>
+    <br>
+    d: Chave privada.<br>
+    n: O módulo calculado.<br>
+    Exemplo simples:<br>
+    Escolha p=11, q=13, então n=143.<br>
+    <br>
+    Escolha 𝑒=7(coprimo de (11−1)(13−1)=120.<br>
+    <br>
+    A chave privada é d=103 (calculado como inverso modular de 𝑒).<br>
+    Para criptografar M=9:<br>
+    <br>
+    𝐶=9⁷ mod143 = 48<br>
+  </p>
+
+  <a href="index.html">
+    <button class="btn btn-primary m-5">
+      Entendi
+    </button>
+  </a>
+
+  <audio id="backgroundAudio" autoplay>
+    <source
+      src="https://kappa.vgmsite.com/soundtracks/hollow-knight-original-soundtrack/ucctfmneeb/09.%20City%20of%20Tears.mp3"
+      type="audio/mpeg">
+    Your browser does not support the audio tag.
+  </audio>
+
+  <script>
+    const audio = document.getElementById('backgroundAudio');
+    audio.volume = 0.03; 
+  </script>
+</body>
+
+</html>
